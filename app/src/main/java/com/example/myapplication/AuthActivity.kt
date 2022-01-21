@@ -136,6 +136,7 @@ class AuthActivity : AppCompatActivity()
                                 val intent = Intent(this@AuthActivity, MainActivity::class.java)
                                 intent.putExtra(Constants.NAME, name)
                                 intent.putExtra(Constants.ROLE, role)
+                                intent.putExtra(Constants.TOKEN, token)
                                 startActivity(intent)
                             }
                             else
@@ -151,20 +152,5 @@ class AuthActivity : AppCompatActivity()
                 }
             }
         }
-    }
-
-    public fun getToken(): String
-    {
-        return token
-    }
-
-    public fun getName(): String
-    {
-        return name
-    }
-
-    public fun getGroup(): String?
-    {
-        return group
     }
 }

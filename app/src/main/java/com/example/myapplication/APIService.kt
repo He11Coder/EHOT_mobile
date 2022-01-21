@@ -13,6 +13,12 @@ interface APIService
     @POST("/api/user/login")
     suspend fun logIn(@Body requestBody: RequestBody): Response<AuthData>
 
+    @POST("/api/teacher/qrcode")
+    suspend fun setAtt(@Body requestBody: RequestBody, @Header("Authorization") auth: String): Response<SetAttData>
+
     @GET("/api/user/getInfo")
     suspend fun getInfo(@Header("Authorization") auth: String): Response<GetInfoData>
+
+    @GET("/api/student/qrcode")
+    suspend fun getQR(@Header("Authorization") auth: String): Response<GetQRData>
 }

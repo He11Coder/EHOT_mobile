@@ -3,6 +3,7 @@
     package="com.example.myapplication">
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
     
     <application
         android:usesCleartextTraffic="true"
@@ -24,6 +25,16 @@
 
         <activity
             android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".CameraActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".QRActivity"
             android:exported="true">
         </activity>
 
