@@ -6,10 +6,11 @@
         <entry key="..\:/Users/Demon/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Demon/AndroidStudioProjects/MyApplication/app/src/main/res/layout/auth_activity.xml" value="0.1331081081081081" />
+        <entry key="..\:/Users/Demon/AndroidStudioProjects/MyApplication/app/src/main/res/layout/auth_activity.xml" value="0.264" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/MyApplication/app/src/main/res/layout/camera_activity.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/MyApplication/app/src/main/res/layout/main_activity.xml" value="0.25" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/MyApplication/app/src/main/res/layout/qr_activity.xml" value="0.16" />
+        <entry key="..\:/Users/Demon/AndroidStudioProjects/MyApplication/app/src/main/res/layout/register_activity.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

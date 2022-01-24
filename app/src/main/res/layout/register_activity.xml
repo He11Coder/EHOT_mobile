@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/registerLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:textAlignment="center"
+        android:text="Please, fill in the following fields"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/emailRegEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/registerLabel"
+        android:layout_marginTop="40sp"
+        android:layout_marginHorizontal="30sp" />
+
+    <EditText
+        android:id="@+id/passwordRegEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailRegEdit"
+        android:layout_marginTop="40sp"
+        android:layout_marginHorizontal="30sp" />
+
+    <EditText
+        android:id="@+id/passwordConfirmEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirm Your Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/passwordRegEdit"
+        android:layout_marginTop="40sp"
+        android:layout_marginHorizontal="30sp" />
+
+    <Button
+        android:id="@+id/registerRegButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/passwordConfirmEdit"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="30sp" />
+
+</RelativeLayout>

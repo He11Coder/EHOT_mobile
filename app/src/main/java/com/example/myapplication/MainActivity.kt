@@ -34,11 +34,11 @@ class MainActivity : AppCompatActivity()
         group = intent.getStringExtra(Constants.GROUP)
         role = intent.getStringExtra(Constants.ROLE)
 
-        greetingLabel.text = "Hello, $name!"
+        //greetingLabel.text = "Hello, $name!"
 
         if (role == "student")
         {
-            groupLabel.text = "Your group is $group"
+            //groupLabel.text = "Your group is $group"
             actionButton.text = "Generate QR-code"
 
             actionButton.setOnClickListener{

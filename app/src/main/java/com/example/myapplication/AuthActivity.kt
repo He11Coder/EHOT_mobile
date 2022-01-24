@@ -25,13 +25,14 @@ class AuthActivity : AppCompatActivity()
     private var email_field: EditText? = null
     private var pass_field: EditText? = null
     private var logIn_button: Button? = null
+    private var register_button: Button? = null
 
     private var token: String = ""
     private var email: String = ""
     private var role: String = ""
-    private var name: String = ""
-    private var group: String? = ""
-    private var year: Int? = 0
+    //private var name: String = ""
+    //private var group: String? = ""
+    //private var year: Int? = 0
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -41,6 +42,7 @@ class AuthActivity : AppCompatActivity()
         email_field = findViewById(R.id.emailEdit)
         pass_field = findViewById(R.id.passwordEdit)
         logIn_button = findViewById(R.id.logInButton)
+        register_button = findViewById(R.id.registerButton)
 
         logIn_button?.setOnClickListener {
             if (email_field?.text?.toString()?.trim()?.equals("")!!)
@@ -55,6 +57,11 @@ class AuthActivity : AppCompatActivity()
             {
                 authUser()
             }
+        }
+
+        register_button?.setOnClickListener {
+            val intent = Intent(this@AuthActivity, RegisterActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -88,7 +95,12 @@ class AuthActivity : AppCompatActivity()
                             email = items.email
                             token = items.token
                             role = items.role
-                            getUserInfo()
+
+                            val intent = Intent(this@AuthActivity, MainActivity::class.java)
+                            intent.putExtra(Constants.TOKEN, token)
+                            intent.putExtra(Constants.ROLE, role)
+                            startActivity(intent)
+                            //getUserInfo()
                         }
                     }
                     else
@@ -100,7 +112,7 @@ class AuthActivity : AppCompatActivity()
         }
     }
 
-    private fun getUserInfo()
+    /*private fun getUserInfo()
     {
         val retrofit = Retrofit.Builder().baseUrl("http://ehot.herokuapp.com").addConverterFactory(GsonConverterFactory.create()).build()
         val service = retrofit.create(APIService::class.java)
@@ -152,5 +164,5 @@ class AuthActivity : AppCompatActivity()
                 }
             }
         }
-    }
+    }*/
 }

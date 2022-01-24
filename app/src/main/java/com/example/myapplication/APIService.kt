@@ -16,6 +16,9 @@ interface APIService
     @POST("/api/teacher/qrcode")
     suspend fun setAtt(@Body requestBody: RequestBody, @Header("Authorization") auth: String): Response<SetAttData>
 
+    @POST("/api/user/new")
+    suspend fun registerUser(@Body requestBody : RequestBody): Response<RegData>
+
     @GET("/api/user/getInfo")
     suspend fun getInfo(@Header("Authorization") auth: String): Response<GetInfoData>
 

@@ -61,6 +61,19 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="316dp" />
 
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Now"
+        android:layout_below="@id/logInButton"
+        android:layout_marginTop="5sp"
+        android:layout_marginHorizontal="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="316dp" />
+
     <TextView
         android:id="@+id/welcomeLabel"
         android:layout_width="match_parent"
